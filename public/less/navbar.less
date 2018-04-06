@@ -1,0 +1,56 @@
+.app-wrap {
+  .navbar {
+    font-family: 'Cagliostro', 'Calibri Light', sans-serif;
+    grid-area: ~'1 / 1 / 2 / 3';
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: @nvb-background-color;
+    color: @content-light;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.75);
+    z-index: 2;
+    .logo {
+      font-family: 'Satisfy', cursive;
+      font-weight: bold;
+      font-size: 28px;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+    }
+    .navbar-menu {
+      display: flex;
+      .menu-item {
+        height: 100%;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border-left: 1px solid black;
+        .menu-item-text {
+          margin-left: 5px;
+        }
+      }
+      .user-welcome-message {
+        height: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border-left: 1px solid black;
+        .username {
+          font-style: italic;
+        }
+      }
+    }
+    a {
+      transition: all .3s;
+      &:hover {
+        color: @nvb-hover-color;
+      }
+    }
+  }
+}

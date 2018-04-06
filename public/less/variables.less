@@ -1,0 +1,41 @@
+// Variables
+@main-color: #16a2b6;
+@secondary-color: #008B8B;
+@content-light: #fffff0;
+@content-dark: #000000;
+
+// Navbar
+@nvb-background-color: @secondary-color;
+@nvb-hover-color: #ffff00;
+
+// Country List specific variables
+@cl-background-color: @main-color;
+@cl-hover-color: lighten(@cl-background-color, 10%);
+@cw-background-color: darken(@cl-background-color, 5%);
+@cw-hover-color: lighten(@cw-background-color, 10%);
+@cl-chosen-color: #84c9a8;
+@cl-chosen-hover-color: lighten(@cl-chosen-color, 10%);
+@cw-chosen-color: darken(@cl-chosen-color, 5%);
+@cw-chosen-hover-color: lighten(@cw-chosen-color, 10%);
+
+// Modal specific variables
+@md-background-color: @main-color;
+@md-stat-background-color: @md-background-color;
+@md-stat-hover-color: lighten(@md-stat-background-color, 10%);
+@md-stat-sub-background-color: darken(@md-background-color, 5%);
+@text-error: #8b0000;
+@input-focus: #daa520;
+
+// Progressbar
+@progressbar-background: rgba(204, 204, 204, 0.75);
+@progressbar-value: #299f77;
+
+// Animations
+@keyframes animate-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

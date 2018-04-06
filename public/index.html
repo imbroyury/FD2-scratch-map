@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scratch Map</title>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe6Nb5vWck7juVE44B16d96cEnCCPtOf8"></script>
+    <script defer src="bundle.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+<body>
+
+<div class="loading-screen">
+    <i class="fas fa-spinner fa-5x fa-spin"></i>
+</div>
+<div class="app-wrap">
+    <nav class="navbar"><div class="logo">ScratchMap</div><div class="navbar-menu"></div></nav>
+    <section class="country-list"></section>
+    <div id="google-maps"></div>
+</div>
+
+</body>
+</html>

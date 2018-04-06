@@ -1,0 +1,145 @@
+@import "variables";
+
+.app-wrap {
+  .country-list {
+    grid-area: ~'2 / 1 / 3 / 2';
+    background-color: @cl-background-color;
+    padding: 15px;
+    overflow-y: scroll;
+    overflow-y: overlay;
+    font-family: 'Raleway', 'Calibri Light', sans-serif;
+    box-shadow: 1px 0 3px 0 rgba(0,0,0,0.75);
+    z-index: 1;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #bfbfbf;
+      outline: 1px solid slategrey;
+      border-radius: 5px;
+    }
+
+    .region {
+      margin: 5px;
+      border: 2px solid black;
+      border-radius: 5px;
+      text-align: center;
+      overflow: hidden;
+      .region-name {
+        padding: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+          background-color: @cl-hover-color;
+        }
+        &.region-chosen {
+          background-color: @cl-chosen-color;
+          &:hover {
+            background-color: @cl-chosen-hover-color;
+          }
+        }
+      }
+      .subregions-wrap {
+        text-align: left;
+        padding-bottom: 5px;
+        display: none;
+        &.visible {
+          display: block;
+          animation: animate-opacity .3s ease-in-out;
+          border-top: 2px solid black;
+        }
+        .subregion {
+          .subregion-name {
+            padding: 3px;
+            font-weight: bold;
+            cursor: pointer;
+            border-bottom: 1px dashed black;
+            transition: all .3s;
+            &:before {
+              display: inline-block;
+              transition: transform .2s;
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: "\f105";
+              margin: 0 5px;
+            }
+            &:hover {
+              background-color: @cl-hover-color;
+            }
+            &.subregion-chosen {
+              background-color: @cl-chosen-color;
+              &:hover {
+                background-color: @cl-chosen-hover-color;
+              }
+            }
+            &.countries-wrap-visible {
+              &:before {
+                transform: rotate(90deg);
+              }
+            }
+            .name-marker {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      .countries-wrap {
+        display: none;
+        text-align: left;
+        background-color: @cw-background-color;
+        box-shadow: inset 0 0 3px 0 rgba(0,0,0,0.75);
+        &.visible {
+          display: block;
+          animation: animate-opacity .3s ease-in-out;
+        }
+        .country {
+          padding: 3px;
+          border-bottom: 1px dashed black;
+          transition: all .3s;
+          &:hover {
+            background-color: @cw-hover-color;
+          }
+          &.country-chosen {
+            background-color: @cw-chosen-color;
+            box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.5);
+            &:hover {
+              background-color: @cw-chosen-hover-color;
+            }
+          }
+          input {
+            display: none;
+            &:checked + label {
+              &::before {
+                content: "\f058";
+              }
+            }
+          }
+          label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            &::before {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 400;
+              content: "\f111";
+            }
+            .flag-small {
+              width: 30px;
+              margin: 0 7px;
+            }
+            .country-name {
+            }
+          }
+        }
+      }
+    }
+  }
+}
