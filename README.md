@@ -1,5 +1,7 @@
 # FD2-scratch-map
 
+## Installation
+
 **1. Download the repo**
 
 **2. Set up MongoDB:**
