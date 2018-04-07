@@ -10,8 +10,6 @@ Digital scratch map for travelling enthusiasts. Mark countries you've been to - 
 
 **2. Set up MongoDB:**
 
-To use the application correctly you need to:
-
 2.1 Install MongoDB
 
 2.2 Restore a database. Database is uploaded to /mongo/scratchmap folder
