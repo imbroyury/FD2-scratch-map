@@ -1,5 +1,9 @@
 # FD2-scratch-map
 
+## Descripton
+
+Digital scratch map for travelling enthusiasts. Mark countries you've been to - register & log in to save them to your account, change map color settings and view statistics!
+
 ## Installation
 
 **1. Download the repo**
