@@ -1,4 +1,4 @@
-# FD2-scratch-map
+# Scratch Map
 
 ## Descripton
 
